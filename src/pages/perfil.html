@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/output.css">
+  <title>Perfil</title>
+</head>
+
+<body class="bg-gray-100 flex justify-center py-10">
+  
+  <div class="bg-white shadow-xl rounded-2xl p-10 w-full max-w-3xl">
+    
+    <!-- Encabezado -->
+    <div class="flex items-center gap-4 mb-8">
+      <div
+        class="w-20 h-20 rounded-full bg-linear-to-r from-blue-600 to-purple-500 
+               flex items-center justify-center text-white text-3xl font-bold">
+        JL
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold">Juan</h2>
+        <p class="text-gray-500">Juancho@gmail.com</p>
+      </div>
+    </div>
+
+    <hr class="mb-8" />
+
+    <!-- Formulario -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Nombre -->
+      <div>
+        <label class="text-gray-700 font-semibold">Nombre</label>
+        <input 
+          type="text"
+          value=""
+          placeholder="Nombre"
+          class="w-full mt-1 p-3 bg-gray-100 border rounded-lg outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+          readonly
+        >
+      </div>
+
+      <!-- Apellido -->
+      <div>
+        <label class="text-gray-700 font-semibold">Apellido</label>
+        <input 
+          type="text"
+          value=""
+          placeholder="Apellido"
+          class="w-full mt-1 p-3 bg-gray-100 border rounded-lg outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+          readonly
+        >
+      </div>
+
+      <!-- Correo -->
+      <div class="md:col-span-2">
+        <label class="text-gray-700 font-semibold">Correo Electrónico</label>
+        <input 
+          type="email"
+          value=""
+          placeholder="correo@gmail.com"
+          class="w-full mt-1 p-3 bg-gray-100 border rounded-lg outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+          readonly
+        >
+      </div>
+
+      <!-- Teléfono -->
+      <div class="md:col-span-2">
+        <label class="text-gray-700 font-semibold">Teléfono</label>
+        <input 
+          type="text"
+          value=""
+          placeholder="Teléfono"
+          class="w-full mt-1 p-3 bg-gray-100 border rounded-lg outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+          readonly
+        >
+      </div>
+    </div>
+
+    <br>
+    
+    <!-- Botones -->
+    <div class="flex flex-col items-center justify-center space-y-2">
+      <button id="editar-btn" 
+        class="bg-linear-to-r from-blue-600 to-purple-600 w-full rounded-2xl mt-4 py-3 text-white font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200">
+        Editar Perfil
+      </button>
+      
+      <div id="acciones-edicion" class="hidden justify-center items-center space-x-4 w-full">
+        <button id="guardar-btn" 
+          class="bg-linear-to-r from-green-600 to-emerald-600 rounded-xl text-white font-bold py-3 px-8 hover:shadow-lg hover:scale-105 transition-all duration-200">
+          Guardar Cambios
+        </button>
+
+        <button id="cancelar-btn" 
+          class="bg-gray-700 rounded-xl text-white font-bold py-3 px-8 hover:bg-gray-800 hover:shadow-lg transition-all duration-200">
+          Cancelar
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./java/perfil.js"></script>
+</body>
+</html>
